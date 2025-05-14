@@ -1,0 +1,15 @@
+/* Define initial styles for the button */
+#colorButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Define styles for the button when it is clicked */
+#colorButton.clicked {
+    background-color: green;
+}
