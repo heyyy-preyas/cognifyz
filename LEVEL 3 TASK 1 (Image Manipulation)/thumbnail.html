@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Image Gallery</title>
+    <link rel="stylesheet" href="thumbnail.css">
+</head>
+<body>
+    <div class="gallery">
+        <img src="software.jpg" alt="Image 1" class="thumbnail" onclick="showImage(0)">
+        <img src="web.jpg" alt="Image 2" class="thumbnail" onclick="showImage(1)">
+        <img src="stack.jpg" alt="Image 3" class="thumbnail" onclick="showImage(2)">
+        <!-- Add more thumbnails as needed -->
+    </div>
+    
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+        <img class="modal-content" id="modal-image">
+    </div>
+
+    <script src="thumbnail.js"></script>
+</body>
+</html>
